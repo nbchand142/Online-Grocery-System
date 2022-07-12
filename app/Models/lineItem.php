@@ -9,6 +9,6 @@ class lineItem extends Model
 {
     use HasFactory;
     protected $table = "lineItems";
-    protected $fillable = ["orderId","productId","quantity","pricePerItem","total"];
+    protected $fillable = ["order_id","product_id","quantity","price_per_item","total"];
 
 }
