@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    public function up(){
+    public function up()
+    {
         Schema::create("orders",function(Blueprint $table){
             $table->id(); 
             $table->string('user_id');
@@ -21,10 +22,16 @@ return new class extends Migration
             $table->timestamps();
 
         });
+    
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
-       
+        //
     }
 };
