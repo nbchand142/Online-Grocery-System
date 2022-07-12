@@ -8,14 +8,11 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create("customers", function (Blueprint $table) {
+        Schema::create("categories", function (Blueprint $table) {
             $table->id();
             $table->string("name",50);
-            $table->string("contact",25);
-            $table->string("address",100);
-            $table->timestamps();
-
-        }); 
+           $table->timestamps();
+        });
     }
 
     /**
