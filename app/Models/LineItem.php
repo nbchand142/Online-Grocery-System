@@ -11,4 +11,7 @@ class LineItem extends Model
     protected $table = "lineItems";
     protected $fillable = ["order_id","product_id","quantity","price_per_item","total"];
 
+    function order(){
+        return $this->belongsTo(Order::class);
+    }
 }
