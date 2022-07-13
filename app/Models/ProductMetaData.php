@@ -10,4 +10,8 @@ class ProductMetaData extends Model
     use HasFactory;
     protected $table="products_meta_data";
     protected $fillable=["product_id","name","value"];
+
+     Function product(){
+        return $this->belongsTo(Product::class);
+     }
 }
