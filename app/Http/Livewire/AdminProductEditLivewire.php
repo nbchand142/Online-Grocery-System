@@ -4,15 +4,19 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class SingleProductLivewire extends Component
+class AdminProductEditLivewire extends Component
 {
+    
+    
     public $product_id;
-    function mount($product_id){
+function mount($product_id){
+
         $this->product_id = $product_id;
     }
+    function save(){}
+    
     public function render()
     {
-        return view('livewire.single-product-livewire');
+        return view('livewire.admin-product-edit-livewire');
     }
 }
- 
