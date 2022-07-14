@@ -11,7 +11,7 @@ class ProductMetaData extends Model
     protected $table="products_meta_data";
     protected $fillable=["product_id","name","value"];
 
-     Function product(){
+    function product(){
         return $this->belongsTo(Product::class);
-     }
+    }
 }
