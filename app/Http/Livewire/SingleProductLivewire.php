@@ -11,3 +11,4 @@ class SingleProductLivewire extends Component
         return view('livewire.single-product-livewire');
     }
 }
+ 
