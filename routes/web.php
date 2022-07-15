@@ -28,7 +28,7 @@ Route::get('/my-orders',OrderLivewire::class);
 Route::get('/chekout',CheckoutLivewire::class);
 Route::get('/admin/order/',AdminOrderLivewire::class);
 Route::get('/admin/order/edit/{order_id}',AdminOrderEditLivewire::class);
-Route::get('/admin/products',AdminProductLivewire::class);
+ Route::get('/admin/products',AdminProductLivewire::class);
 
 Route::get('/admin/product/edit{product_id}',AdminProductEditLivewire::class);
 Route::get('/admin/product/add',AdminProductAddLivewire::class);
