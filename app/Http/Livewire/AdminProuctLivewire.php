@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class AdminProuctLivewire extends Component
+class AdminProductLivewire extends Component
 {
     public $id;
     function activate($id){
