@@ -7,7 +7,7 @@ use Livewire\Component;
 class AdminUserEditLivewire extends Component
 {
 
-    public$user_id;
+    public $user_id;
     function mount($user_id){
         $this->user_id = $user_id;
     }
