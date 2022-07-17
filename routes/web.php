@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',HomepageLivewire::class);
 Route::get('/product/{product_id}',SingleProductLivewire::class);
-Route::get('/categories/{category_id}',CategoriesLivewire::class);
+Route::get('/categories/{category_id}',CategoriesLivewire::class)->name('categories');
 Route::get('/cart',CartLivewire::class);
 Route::get('/search/{keyword}',SearchLivewire::class);
 Route::get('/my-orders',OrderLivewire::class);
