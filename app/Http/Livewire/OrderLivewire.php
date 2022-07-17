@@ -6,10 +6,10 @@ use Livewire\Component;
 
 class OrderLivewire extends Component
 {
-    public $id;
-    function cancel($id){
+    public $order_id;
+    function cancel($order_id){
 
-            $this->id = $id;
+            $this->order_id = $order_id;
         }
 
     public function render()

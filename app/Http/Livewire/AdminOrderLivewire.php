@@ -6,16 +6,16 @@ use Livewire\Component;
 
 class AdminOrderLivewire extends Component
 {
-    public $id;
-    function cancel($id){
-        $this->id = $id;
+    public$order_id;
+    function cancel($order_id){
+        $this->order_id = $order_id;
     }
-        function dispatch($id){
-            $this->id = $id;
+        function dispatch($order_id){
+            $this->id = $order_id;
         }
         
-        function delivered($id){
-            $this->id = $id;
+        function delivered($order_id){
+            $this->order_id = $order_id;
 
         }
 
