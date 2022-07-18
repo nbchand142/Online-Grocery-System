@@ -9,7 +9,7 @@ use App\Http\Livewire\OrderLivewire;
 use App\Http\Livewire\CheckoutLivewire;
 use App\Http\Livewire\AdminOrderLivewire;
 use App\Http\Livewire\AdminOrderEditLivewire;
-
+use App\Http\Livewire\AdminProductLivewire;
 use App\Http\Livewire\AdminProductEditLivewire;
 use App\Http\Livewire\AdminProductAddLivewire;
 use App\Http\Livewire\AdminUserLivewire;
@@ -27,7 +27,7 @@ Route::get('/my-orders',OrderLivewire::class)->name('my-orders');
 Route::get('/chekout',CheckoutLivewire::class)->name('chekout');
 Route::get('/admin/order/',AdminOrderLivewire::class)->name('admin.order');
 Route::get('/admin/order/edit/{order_id}',AdminOrderEditLivewire::class)->name('admin.order.edit');
-
+Route::get('/admin/products',AdminProductLivewire::class)->name('admin.products');
 Route::get('/admin/product/edit{product_id}',AdminProductEditLivewire::class)->name('admin.product.edit');
 Route::get('/admin/product/add',AdminProductAddLivewire::class)->name('admin.product.add');
 Route::get('/admin/users',AdminUserLivewire::class)->name('admin.users');
