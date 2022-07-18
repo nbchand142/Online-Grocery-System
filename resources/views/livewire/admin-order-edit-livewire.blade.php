@@ -20,4 +20,6 @@
     <td class="border px-8 py-4">Maggie O'Neill</td>
     <td class="border px-8 py-4">Austria</td>
   </tr>
-</table></div>
+</table>
+</div>
+    
