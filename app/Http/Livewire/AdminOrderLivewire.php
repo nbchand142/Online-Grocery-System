@@ -22,6 +22,7 @@ class AdminOrderLivewire extends Component
 
     public function render()
     {
+        $all_order = order::all();
         return view('livewire.admin-order-livewire');
     }
 }
