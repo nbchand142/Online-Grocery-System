@@ -1,25 +1,18 @@
 <div>
-<table class="shadow-lg bg-white border-collapse">
-  <tr>
-    <th class="bg-blue-100 border text-left px-8 py-4">Company</th>
-    <th class="bg-blue-100 border text-left px-8 py-4">Contact</th>
-    <th class="bg-blue-100 border text-left px-8 py-4">Country</th>
-  </tr>
-  <tr>
-    <td class="border px-8 py-4">Alfreds Futterkiste</td>
-    <td class="border px-8 py-4">Dante Sparks</td>
-    <td class="border px-8 py-4">Italy</td>
-  </tr>
-  <tr>
-    <td class="border px-8 py-4">Centro comercial Moctezuma</td>
-    <td class="border px-8 py-4">Neal Garrison</td>
-    <td class="border px-8 py-4">Spain</td>
-  </tr>
-  <tr>
-    <td class="border px-8 py-4">Ernst Handel</td>
-    <td class="border px-8 py-4">Maggie O'Neill</td>
-    <td class="border px-8 py-4">Austria</td>
-  </tr>
+    <div class="container">
+        <div class="col-lg-6 ">
+            <h1 class="bg-red text-white">Add Product</h1>
+
+    <table class="shadow-lg bg-white border-colspace">
+
+name:<input type="text"name="name" class="bg-green-100 border text-left px-8 py-4"><br><br>
+    category_id:<input type="text"name="category_id" class="bg-green-100 border text-left px-8 py-4"><br><br>
+    price:<input type="text"name="price" class="bg-green-100 border text-left px-8 py-4"><br><br>
+    description:<input type="text"name="description" class="bg-green-100 border text-left px-8 py-4"><br><br>
+    stock:<input type="text"name="stock" class="bg-green-100 border text-left px-8 py-4"><br><br>
+    active:<input type="text"name="active" class="bg-green-100 border text-left px-8 py-4"><br><br>
+   
 </table>
+</div>
 </div>
     

@@ -1,25 +1,22 @@
 <div>
-<table class="shadow-lg bg-white border-collapse">
-  <tr>
-    <th class="bg-blue-100 border text-left px-8 py-4">Company</th>
-    <th class="bg-blue-100 border text-left px-8 py-4">Contact</th>
-    <th class="bg-blue-100 border text-left px-8 py-4">Country</th>
-  </tr>
-  <tr>
-    <td class="border px-8 py-4">Alfreds Futterkiste</td>
-    <td class="border px-8 py-4">Dante Sparks</td>
-    <td class="border px-8 py-4">Italy</td>
-  </tr>
-  <tr>
-    <td class="border px-8 py-4">Centro comercial Moctezuma</td>
-    <td class="border px-8 py-4">Neal Garrison</td>
-    <td class="border px-8 py-4">Spain</td>
-  </tr>
-  <tr>
-    <td class="border px-8 py-4">Ernst Handel</td>
-    <td class="border px-8 py-4">Maggie O'Neill</td>
-    <td class="border px-8 py-4">Austria</td>
-  </tr>
-</table>
+user_id:<input type="text"name="user_id"><br><br>
+    subtotal:<input type="text"name="subtotal"><br><br>
+    delivery_charge:<input type="text"name="delevery_charge"><br><br>
+    tax:<input type="text"name="tax"><br><br>
+    discount:<input type="text"name="diacount"><br><br>
+    total:<input type="text"name="total"><br><br>
+    status:<input type="text"name="status"><br><br>
+    order_note:<input type="text"name="order_dev"><br><br>
+    financial_status:<input type="text"name="financial_status"><br><br>
+
+
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('orders') }}
+        </h2>
+    </x-slot>
+    @foreach ($all_order as $order)
+        {{$order->name}}
+    @endforeach
 </div>
-    
+
