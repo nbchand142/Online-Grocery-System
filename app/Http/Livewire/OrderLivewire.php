@@ -13,7 +13,7 @@ class OrderLivewire extends Component
         }
     public function render()
     {
-        $all_orders = orders::all();
+        $all_orders = order::all();
         return view('livewire.order-livewire',['all_orders'=>$all_orders]);
     }
 }
