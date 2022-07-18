@@ -13,12 +13,7 @@ class OrderLivewire extends Component
         }
 
     public function render()
-<<<<<<< HEAD
-    {
-        
-=======
     {     
->>>>>>> de1ecf87e6f7acf7268617c48a7f9fa153ac91ea
         return view('livewire.order-livewire');
     }
 }
