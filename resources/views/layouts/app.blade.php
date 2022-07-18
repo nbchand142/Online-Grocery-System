@@ -20,6 +20,7 @@
         <x-jet-banner />
 
         <div class="min-h-screen bg-gray-100">
+            @livewire('navigation-menu')
 
             <!-- Page Heading -->
             @if (isset($header))
@@ -30,18 +31,10 @@
                 </header>
             @endif
 
-            <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
-                <div class="min-h-screen col-span-2 p-6 shadow bg-white border-b border-gray-200">
-                    <div class="grid grid-cols-1">
-                        <a href="/dashboard">Home</a>
-                        <a href="{{route('admin.users')}}">Users</a>
-                        <a href="{{route('admin.products')}}">Products</a>
-                    </div>
-                </div>
-                <main class="col-span-10">
-                    {{ $slot }}
-                </main>
-            </div>
+            <!-- Page Content -->
+            <main>
+                {{ $slot }}
+            </main>
         </div>
 
         @stack('modals')
