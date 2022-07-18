@@ -27,7 +27,7 @@ Route::get('/chekout',CheckoutLivewire::class)->name('chekout');
 Route::get('/admin/order/',AdminOrderLivewire::class)->name('admin.order');
 Route::get('/admin/order/edit/{order_id}',AdminOrderEditLivewire::class)->name('admin.order.edit');
 Route::get('/admin/products',AdminProductLivewire::class)->name('admin.products');
-Route::get('/admin/product/edit{product_id}',AdminProductEditLivewire::class)->name('admin.product.edit');
+Route::get('/admin/product/edit/{product_id}',AdminProductEditLivewire::class)->name('admin.product.edit');
 Route::get('/admin/product/add',AdminProductAddLivewire::class)->name('admin.product.add');
 Route::get('/admin/users',AdminUserLivewire::class)->name('admin.users');
 Route::get('/admin/user/edit{user_id}',AdminUserEditLivewire::class)->name('admin.user.edit');

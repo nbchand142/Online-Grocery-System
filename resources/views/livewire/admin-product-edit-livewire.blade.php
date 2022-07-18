@@ -1,9 +1,11 @@
 <div>
-name:<input type="text"name="name"><br><br>
-    category_id:<input type="text"name="category_id"><br><br>
-    price:<input type="text"name="price"><br><br>
-    description:<input type="text"name="description"><br><br>
-    stock:<input type="text"name="stock"><br><br>
-    active:<input type="text"name="active"><br><br>
+    <center>
+        Name: <input type="text" wire:model="name" ><br>
+        Category_id: <input type="text" wire:model="category_id" ><br>
+        Price: <input type="text" wire:model="price" ><br>
+        Description: <input type="text" wire:model="description" ><br>
+        Stock: <input type="text" wire:model="stock" ><br>
+        <input type="button" wire:click='save()' value="Update">
+    </center>
 </div>
 
