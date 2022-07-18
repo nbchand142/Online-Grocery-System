@@ -21,6 +21,7 @@
                     <x-jet-nav-link href="{{ route('admin.products') }}" :active="request()->routeIs('admin.products')">
                         {{ __('Products') }}
                     </x-jet-nav-link>
+<<<<<<< HEAD
                     <x-jet-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
                         {{ __('categories') }}
                     </x-jet-nav-link>
@@ -29,6 +30,26 @@
                     </x-jet-nav-link>
 
                </div>
+=======
+                    
+
+                    <x-jet-nav-link href="{{ route('admin.order') }}" :active="request()->routeIs('admin.order')">
+                        {{ __('Order') }}
+                    </x-jet-nav-link>
+
+                    <x-jet-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
+                        {{ __('Categories') }}
+                    </x-jet-nav-link>
+
+
+
+                    
+
+                   
+
+
+                </div>
+>>>>>>> b280090bb3f185bc3aa30fd51ae41f90fe336a1e
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
