@@ -21,21 +21,19 @@
                     <x-jet-nav-link href="{{ route('admin.products') }}" :active="request()->routeIs('admin.products')">
                         {{ __('Products') }}
                     </x-jet-nav-link>
-                    
-
                     <x-jet-nav-link href="{{ route('admin.order') }}" :active="request()->routeIs('admin.order')">
                         {{ __('Order') }}
                     </x-jet-nav-link>
 
-                    <x-jet-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
+                    {{-- <x-jet-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
                         {{ __('Categories') }}
-                    </x-jet-nav-link>
+                    </x-jet-nav-link> --}}
 
 
 
-                    
 
-                   
+
+
 
 
                 </div>
