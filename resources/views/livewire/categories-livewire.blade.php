@@ -1,3 +1,4 @@
 <div>
-    {{-- Stop trying to control. --}}
+name:<input type="text"name="name"><br><br>
+
 </div>
