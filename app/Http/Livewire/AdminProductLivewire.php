@@ -2,10 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Product;
 use Livewire\Component;
 
-class AdminProudctLivewire extends Component
+class AdminProductLivewire extends Component
 {
     public $product_id;
     function activate($product_id){
