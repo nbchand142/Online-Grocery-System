@@ -3,6 +3,9 @@
 use App\Http\Livewire\HomepageLivewire;
 use App\Http\Livewire\SingleProductLivewire;
 use App\Http\Livewire\CategoriesLivewire;
+use App\Http\Livewire\AdminCategoriesLivewire;
+use App\Http\Livewire\AdminCategoryEditLivewire;
+use App\Http\Livewire\AdminCategoryAddLivewire;
 use App\Http\Livewire\CartLivewire;
 use App\Http\Livewire\SearchLivewire;
 use App\Http\Livewire\OrderLivewire;
@@ -31,6 +34,11 @@ Route::get('/admin/product/edit/{product_id}',AdminProductEditLivewire::class)->
 Route::get('/admin/product/add',AdminProductAddLivewire::class)->name('admin.product.add');
 Route::get('/admin/users',AdminUserLivewire::class)->name('admin.users');
 Route::get('/admin/user/edit{user_id}',AdminUserEditLivewire::class)->name('admin.user.edit');
+Route::get('/admin/category/edit{product_id}',AdminCategoryEditLivewire::class)->name('admin.category.edit');
+Route::get('/admin/category/add',AdminCategoryAddLivewire::class)->name('admin.category.add');
+Route::get('/admin/categories',AdminCategoriesLivewire::class)->name('admin.categories');
+
+
 
 
 

@@ -24,9 +24,9 @@
                         {{ __('Order') }}
                     </x-jet-nav-link>
 
-                    {{-- <x-jet-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
+                  <x-jet-nav-link href="{{ route('admin.categories') }}" :active="request()->routeIs('admin.categories')">
                         {{ __('Categories') }}
-                    </x-jet-nav-link> --}}
+                    </x-jet-nav-link> 
 
 
 
