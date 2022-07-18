@@ -7,23 +7,29 @@
             <a href="{{route('admin.product.add')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add Product</a>
         </div>
     </x-slot>
-    <table>
-        <tr>
-            <td>Product Name</td>
-            <td>Product Price</td>
-            <td>Product Description</td>
-            <td>Product Stock</td>
-            <td>Action</td>
-        </tr>
-        @foreach ($all_products as $product)
+                 
+        <table class="border-separate border-spacing-2 border border-slate-400 ...">
+        <thead>
             <tr>
-                <td>{{$product->name}}</td>
-                <td>{{$product->price}}</td>
-                <td>{{$product->description}}</td>
-                <td>{{$product->stock}}</td>
-                <td>Deactivate | <a href="{{route("admin.product.edit",$product->id)}}">Edit</a></td>
+            <th class="border border-slate-300 ...">Product Name</th>
+            <th class="border border-slate-300 ...">Product Price</th>
+            <th class="border border-slate-300 ...">Product Description</th>
+            <th class="border border-slate-300 ...">Product Stock</th>
+            <th class="border border-slate-300 ...">Action</th>
+
             </tr>
-        @endforeach
+        </thead>
+        <tbody>
+             @foreach ($all_products as $product)
+            <tr>
+            <th class="border border-slate-300 ...">{{$product->name}}</th>
+            <th class="border border-slate-300 ...">{{$product->price}}</th>
+             <th class="border border-slate-300 ...">{{$product->description}}</th>
+            <th class="border border-slate-300 ...">{{$product->stock}}</th>
+            <th class="border border-slate-300 ...">Deactivate | <a href="{{route("admin.product.edit",$product->id)}}">Edit</a></th>
+
+             </tr>
+            @endforeach
+        </tbody>
     </table>
 </div>
-
