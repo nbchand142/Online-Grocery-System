@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Models\Order;
 use Livewire\Component;
 
 class AdminOrderLivewire extends Component
@@ -21,7 +21,7 @@ class AdminOrderLivewire extends Component
 
 
     public function render()
-    {
-        return view('livewire.admin-order-livewire');
+    {       $all_order = Order::all();
+        return view('livewire.admin-order-livewire',['all_order'=>$all_order]);
     }
 }
