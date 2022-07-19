@@ -8,14 +8,14 @@
         </div>
     </x-slot>
                  
-        <table class="border-separate border-spacing-2 border border-slate-400 ...">
+        <table class="border-double border border-slate-400 ...">
         <thead>
             <tr>
-            <th class="border border-slate-300 ...">Product Name</th>
-            <th class="border border-slate-300 ...">Product Price</th>
-            <th class="border border-slate-300 ...">Product Description</th>
-            <th class="border border-slate-300 ...">Product Stock</th>
-            <th class="border border-slate-300 ...">Action</th>
+            <th class="border bg-blue-100 border-slate-300 ...">Product Name</th>
+            <th class="border bg-blue-100  border-slate-300 ...">Product Price</th>
+            <th class="border bg-blue-100  border-slate-300 ...">Product Description</th>
+            <th class="border bg-blue-100  border-slate-300 ...">Product Stock</th>
+            <th class="border bg-blue-100  border-slate-300 ..." colspan="2">Action</th>
 
             </tr>
         </thead>
@@ -26,7 +26,8 @@
             <th class="border border-slate-300 ...">{{$product->price}}</th>
              <th class="border border-slate-300 ...">{{$product->description}}</th>
             <th class="border border-slate-300 ...">{{$product->stock}}</th>
-            <th class="border border-slate-300 ...">Deactivate | <a href="{{route("admin.product.edit",$product->id)}}">Edit</a></th>
+            <th class="border border-slate-300 ...">Deactivate</th>
+            <th class="border border-slate-300 ..."><a href="{{route("admin.product.edit",$product->id)}}">Edit</a></th>
 
              </tr>
             @endforeach
