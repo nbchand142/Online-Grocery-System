@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Category;
 use App\Models\Product;
 use Livewire\Component;
 
@@ -31,6 +32,7 @@ class AdminProductEditLivewire extends Component
     }
     public function render()
     {
-        return view('livewire.admin-product-edit-livewire');
+        $categories = Category::all();
+        return view('livewire.admin-product-edit-livewire',['categories'=>$categories]);
     }
 }
