@@ -20,13 +20,17 @@ use App\Http\Livewire\AdminUserEditLivewire;
 use Illuminate\Support\Facades\Route;
 
 
+// Storefront Layout
 Route::get('/',HomepageLivewire::class);
 Route::get('/product/{product_id}',SingleProductLivewire::class)->name('product');
 Route::get('/categories/{category_id}',CategoriesLivewire::class)->name('categories');
 Route::get('/cart',CartLivewire::class)->name('cart');
 Route::get('/search/{keyword}',SearchLivewire::class)->name('search');
 Route::get('/my-orders',OrderLivewire::class)->name('my-orders');
-Route::get('/chekout',CheckoutLivewire::class)->name('chekout');
+Route::get('/checkout',CheckoutLivewire::class)->name('checkout');
+
+
+
 Route::get('/admin/order/',AdminOrderLivewire::class)->name('admin.order');
 Route::get('/admin/order/edit/{order_id}',AdminOrderEditLivewire::class)->name('admin.order.edit');
 Route::get('/admin/products',AdminProductLivewire::class)->name('admin.products');
