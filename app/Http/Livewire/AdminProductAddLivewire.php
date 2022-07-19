@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Category;
 use App\Models\Product;
 use Livewire\Component;
 
@@ -17,12 +18,12 @@ class AdminProductAddLivewire extends Component
         $product->stock = $this->stock;
         $product->active = 1;
         $product->save();
-
         return redirect(route('admin.products'));
     }
 
     public function render()
     {
-        return view('livewire.admin-product-add-livewire');
+        $categories = Category::all();
+        return view('livewire.admin-product-add-livewire',['categories'=>$categories]);
     }
 }
