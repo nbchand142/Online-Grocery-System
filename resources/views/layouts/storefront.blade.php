@@ -22,7 +22,7 @@
 			<div class="flex flex-wrap items-center">
 				<!-- Brand -->
 				<div class="flex-shrink-0 mr-5">
-					<a href="#"> <img src="images/logo.svg" height="38" alt="Brand" /> </a>
+					<a href="#"> <img src="image/download.jpg" height="80" width="80" alt="Brand" /> </a>
 				</div>
 				<!-- Brand .//end -->
 
