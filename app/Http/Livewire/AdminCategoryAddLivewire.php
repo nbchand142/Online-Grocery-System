@@ -6,7 +6,16 @@ use Livewire\Component;
 
 class AdminCategoryAddLivewire extends Component
 {
-    public function render()
+    public $name;
+        function save(){
+            $category = new Category();
+            $category->name = $this->name;
+        $category->save();
+
+        return redirect(route('admin.categories'));
+        }
+
+    function render()
     {
         return view('livewire.admin-category-add-livewire');
     }
