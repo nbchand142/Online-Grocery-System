@@ -5,16 +5,16 @@ use App\Models\Category;
 use Livewire\Component;
 
 class AdminCategoryEditLivewire extends Component
-{  public $product_id, $name;
-        function mount($product_id){
-             $this->product_id = $product_id;
+{  public $category_id, $name;
+        function mount($category_id){
+             $this->category_id = $category_id;
              $category = Category::find($this->category_id);
             $this->name = $category->name;
     }
 
     function save(){
         $category = Category::find($this->category_id);
-        $this->name = $category->name;
+        $category->name =$this->name;
         $category->save();
 
         return redirect(route('admin.categories'));
@@ -22,7 +22,7 @@ class AdminCategoryEditLivewire extends Component
     }
 
     public function render()
-    {
-        return view('livewire.admin-category-edit-livewire');
+    {$all_categories = Category::all();
+        return view('livewire.categories-livewire',['all_categories'=>$all_categories]);
     }
 }
