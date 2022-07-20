@@ -7,11 +7,12 @@ use Livewire\Component;
 class AdminOrderEditLivewire extends Component
 {
 
-    public $order_id;
+    public $order_id; 
 
     function mount ($order_id){
         $this->order = $order_id;
-        $order = order::find($this->order_id);
+        $order = Order::find($this->order_id);
+        $this->user_id = $order->user_id;
         $this->subtotal = $order->subtotal;
         $this->delivery_charge = $order->delivery_charge;
         $this->tax = $order->tax;
@@ -24,7 +25,8 @@ class AdminOrderEditLivewire extends Component
     }
 
     function save(){
-        $order = order::find($this->order_id);
+        $order = Order::find($this->order_id);
+        $order->user_id = $this->user_id;
         $order->subtotal = $this->subtotal;
         $order->delivery_charge = $this->delivery_charge;
         $order->tax = $this->tax;
@@ -33,8 +35,6 @@ class AdminOrderEditLivewire extends Component
         $order->status = $this->status;
         $order->order_note = $this->order_note;
         $order->financial_status = $this->financial_status;
-
-        $order->active = 1;
         $order->save();
 
         return redirect(route('admin.order'));

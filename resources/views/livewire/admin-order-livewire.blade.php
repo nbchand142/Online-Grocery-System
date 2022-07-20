@@ -28,15 +28,15 @@
              @foreach ($all_order as $order)
             <tr>
 
-            <th class="border border-slate-300 ...">{{$order->User_id}}</th>
-            <th class="border border-slate-300 ...">{{$order->Subtotal}}</th>
-            <th class="border border-slate-300 ...">{{$order->Delivery_Charge}}</th>
-            <th class="border border-slate-300 ...">{{$order->Tax}}</th>
-            <th class="border border-slate-300 ...">{{$order->Discount}}</th>
-            <th class="border border-slate-300 ...">{{$order->Total}}</th>
-            <th class="border border-slate-300 ...">{{$order->Status}}</th>
-            <th class="border border-slate-300 ...">{{$order->Ordre_Note}}</th>
-            <th class="border border-slate-300 ...">{{$order->Financial_status}}</th>
+            <th class="border border-slate-300 ...">{{$order->user_id}}</th>
+            <th class="border border-slate-300 ...">{{$order->subtotal}}</th>
+            <th class="border border-slate-300 ...">{{$order->delivery_charge}}</th>
+            <th class="border border-slate-300 ...">{{$order->tax}}</th>
+            <th class="border border-slate-300 ...">{{$order->discount}}</th>
+            <th class="border border-slate-300 ...">{{$order->total}}</th>
+            <th class="border border-slate-300 ...">{{$order->status}}</th>
+            <th class="border border-slate-300 ...">{{$order->order_note}}</th>
+            <th class="border border-slate-300 ...">{{$order->financial_status}}</th>
             <th class="border border-slate-300 ...">Deactivate</th>
             <th class="border border-slate-300 ..."><a href="{{route("admin.order.edit",$order->id)}}">Edit</a></th>
 

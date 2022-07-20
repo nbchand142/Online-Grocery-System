@@ -9,7 +9,7 @@
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Automobiles</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Electronics</a>
 							</li>
 							<li>
 								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Clothes and wear</a>
@@ -18,26 +18,18 @@
 								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Home interiors</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Computer and tech</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Dry foods</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Tools, equipments</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Stationary</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Sports and outdoor</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Sports</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Animal and pets</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Drinks</a>
 							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Men’s clothing</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Women’s clothing</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">More category</a>
-							</li>
+							
 						</ul>
 					</aside>
 					<main class="md:w-3/4 flex-auto">
