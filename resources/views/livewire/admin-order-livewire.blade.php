@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ __('orders') }}
             </h2>
-            <a href="{{route('admin.order')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Edit order</a>
+        
         </div>
     </x-slot>
                  
@@ -25,18 +25,18 @@
             </tr>
         </thead>
         <tbody>
-             @foreach ($all_order as $order)
+             @foreach ($all_orders as $order)
             <tr>
 
-            <th class="border border-slate-300 ...">{{$order->User_id}}</th>
-            <th class="border border-slate-300 ...">{{$order->Subtotal}}</th>
-            <th class="border border-slate-300 ...">{{$order->Delivery_Charge}}</th>
-            <th class="border border-slate-300 ...">{{$order->Tax}}</th>
-            <th class="border border-slate-300 ...">{{$order->Discount}}</th>
-            <th class="border border-slate-300 ...">{{$order->Total}}</th>
-            <th class="border border-slate-300 ...">{{$order->Status}}</th>
-            <th class="border border-slate-300 ...">{{$order->Ordre_Note}}</th>
-            <th class="border border-slate-300 ...">{{$order->Financial_status}}</th>
+            <th class="border border-slate-300 ...">{{$order->user_id}}</th>
+            <th class="border border-slate-300 ...">{{$order->subtotal}}</th>
+            <th class="border border-slate-300 ...">{{$order->delivery_charge}}</th>
+            <th class="border border-slate-300 ...">{{$order->tax}}</th>
+            <th class="border border-slate-300 ...">{{$order->discount}}</th>
+            <th class="border border-slate-300 ...">{{$order->total}}</th>
+            <th class="border border-slate-300 ...">{{$order->status}}</th>
+            <th class="border border-slate-300 ...">{{$order->order_note}}</th>
+            <th class="border border-slate-300 ...">{{$order->financial_status}}</th>
             <th class="border border-slate-300 ...">Deactivate</th>
             <th class="border border-slate-300 ..."><a href="{{route("admin.order.edit",$order->id)}}">Edit</a></th>
 
