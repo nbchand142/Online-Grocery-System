@@ -2,12 +2,15 @@
 
 namespace App\Http\Livewire;
 use App\Models\Order;
+use App\Models\User;
+
 use Livewire\Component;
 
 class AdminOrderEditLivewire extends Component
 {
 
-    public $order_id; 
+    public $order_id,$user_id, $subtotal, $delivery_charge, $tax, $discount, $total, $status,
+     $order_note, $financial_status;
 
     function mount ($order_id){
         $this->order = $order_id;
@@ -26,7 +29,7 @@ class AdminOrderEditLivewire extends Component
 
     function save(){
         $order = Order::find($this->order_id);
-        $order->user_id = $this->user_id;
+        $this->user_id = $order->user_id;
         $order->subtotal = $this->subtotal;
         $order->delivery_charge = $this->delivery_charge;
         $order->tax = $this->tax;
@@ -41,6 +44,7 @@ class AdminOrderEditLivewire extends Component
     }
 
     public function render(){
-        return view('livewire.admin-order-edit-livewire');
+        $user = User::all();
+        return view('livewire.admin-order-edit-livewire',['user'=>$user]);
     }
 }

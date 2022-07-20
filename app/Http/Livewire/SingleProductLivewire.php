@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\Product;
 
 class SingleProductLivewire extends Component
 {
@@ -12,7 +13,8 @@ class SingleProductLivewire extends Component
     }
     public function render()
     {
-        return view('livewire.single-product-livewire');
+        $product = Product::find($this->product_id);
+        return view('livewire.single-product-livewire',['product'=>$product])->layout('layouts.storefront');
     }
 }
  

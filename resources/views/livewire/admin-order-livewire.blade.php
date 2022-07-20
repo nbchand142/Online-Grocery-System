@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ __('orders') }}
             </h2>
-            <a href="{{route('admin.order')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Edit order</a>
+        
         </div>
     </x-slot>
                  
@@ -25,7 +25,7 @@
             </tr>
         </thead>
         <tbody>
-             @foreach ($all_order as $order)
+             @foreach ($all_orders as $order)
             <tr>
 
             <th class="border border-slate-300 ...">{{$order->user_id}}</th>
