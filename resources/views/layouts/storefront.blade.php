@@ -22,7 +22,7 @@
 			<div class="flex flex-wrap items-center">
 				<!-- Brand -->
 				<div class="flex-shrink-0 mr-5">
-					<a href="#"> <img src="image/download.jpg" height="80" width="80" alt="Brand" /> </a>
+					<a href="/"> <img src="{{asset('image/download.jpg')}}" height="80" width="80" alt="Brand" /> </a>
 				</div>
 				<!-- Brand .//end -->
 
@@ -37,12 +37,12 @@
 
 				<!-- Actions -->
 				<div class="flex items-center space-x-2 ml-auto">
-					<a class="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300" href="#">
+					<a class="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300" href="{{route('login')}}">
 						<i class="text-gray-400 w-5 fa fa-user"></i>
 						<span class="hidden lg:inline ml-1">Sign in</span>
 					</a>
 
-					
+
 
 					<a class="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300" href="#">
 						<i class="text-gray-400 w-5 fa fa-shopping-cart"></i>
@@ -52,7 +52,7 @@
 				<!-- Actions .//end -->
 
 				<!-- mobile-only -->
-				
+
 				<!-- mobile-only //end  -->
 
 			</div> <!-- flex grid //end -->
@@ -74,7 +74,7 @@
                   <p>Time:<span id="clock" margin-button></span></p>
 				</center>
                 <!--time end-->
-			
+
 			<!-- menu //end -->
 		</div> <!-- container //end -->
 	</nav>
