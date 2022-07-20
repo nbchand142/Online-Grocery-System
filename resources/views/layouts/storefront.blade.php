@@ -42,10 +42,7 @@
 						<span class="hidden lg:inline ml-1">Sign in</span>
 					</a>
 
-					<a class="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300" href="#">
-						<i class="text-gray-400 w-5 fa fa-heart"></i>
-						<span class="hidden lg:inline ml-1">Wishlist</span>
-					</a>
+					
 
 					<a class="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300" href="#">
 						<i class="text-gray-400 w-5 fa fa-shopping-cart"></i>
@@ -55,17 +52,32 @@
 				<!-- Actions .//end -->
 
 				<!-- mobile-only -->
-				<div class="lg:hidden ml-2">
-					<button type="button" class="bg-white p-3 inline-flex items-center rounded-md text-black hover:bg-gray-200 hover:text-gray-800 border border-transparent">
-						<span class="sr-only">Open menu</span>
-						<i class="fa fa-bars fa-lg"></i>
-					</button>
-				</div>
+				
 				<!-- mobile-only //end  -->
 
 			</div> <!-- flex grid //end -->
 		</div> <!-- container //end -->
 	</header>
+	<nav class="border-b bg-green-600 text-white">
+		<div class="container max-w-screen-xl mx-auto px-4">
+			<!-- menu -->
+				<a h1class="px-3 py-2 rounded-md hover:bg-green-500" href="#"> Online Grocery System <h1></a>
+				<!--time start-->
+				<center>
+                <script>
+                  function showtime(){
+                    var d= new Date();
+                    document.getElementById("clock").innerHTML=d.toLocaleTimeString();
+                  }
+                  setInterval(showtime,1000);
+                  </script>
+                  <p>Time:<span id="clock" margin-button></span></p>
+				</center>
+                <!--time end-->
+			
+			<!-- menu //end -->
+		</div> <!-- container //end -->
+	</nav>
 	<nav class="border-b bg-blue-600 text-white">
 		<div class="container max-w-screen-xl mx-auto px-4">
 			<!-- menu -->

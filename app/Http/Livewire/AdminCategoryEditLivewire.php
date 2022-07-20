@@ -5,9 +5,9 @@ use App\Models\Category;
 use Livewire\Component;
 
 class AdminCategoryEditLivewire extends Component
-{  public $product_id, $name;
-        function mount($product_id){
-             $this->product_id = $product_id;
+{  public $category_id, $name;
+        function mount($category_id){
+             $this->category_id = $categoy_id;
              $category = Category::find($this->category_id);
             $this->name = $category->name;
     }
@@ -23,6 +23,7 @@ class AdminCategoryEditLivewire extends Component
 
     public function render()
     {
+            $product = Product::all();
         
         return view('livewire.admin-category-edit-livewire');
     }
