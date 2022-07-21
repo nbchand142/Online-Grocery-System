@@ -3,8 +3,9 @@
 	<!--  MAIN SECTION  -->
 	<section class="pt-5">
 		<div class="container max-w-screen-xl mx-auto px-4">
+		<nav id="sidebar" class='mx-lt-4 bg-primary' >
 
-			<article class="p-4 bg-white border border-gray-200 shadow-sm rounded-md">
+			<article class="mx-lt-4 bg-primary">
 				<div class="flex flex-col md:flex-row">
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>

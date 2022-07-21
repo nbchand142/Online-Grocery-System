@@ -33,10 +33,10 @@
 					</div>
 					<div class="space-x-2 overflow-auto text-center whitespace-nowrap">
 						<a href="#" class="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500">
-							<img class="w-14 h-14" src="public/image/product.jpg" alt="Product title">
+							<img class="w-14 h-14" src="image/logo.png" alt="Product title">
 						</a>
 						<a href="#" class="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500 ">
-							<img class="w-14 h-14 object-cover" src="images/items/detail/thumb1.jpg" alt="Product title">
+							<img class="w-14 h-14 object-cover" src="image/logo.png" alt="Product title">
 						</a>
 						<a href="#" class="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500">
 							<img class="w-14 h-14 object-cover" src="images/items/detail/thumb2.jpg" alt="Product title">
