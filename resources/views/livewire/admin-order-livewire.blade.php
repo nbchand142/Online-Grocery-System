@@ -11,6 +11,7 @@
         <table class="border-double border border-slate-400 ...">
         <thead>
             <tr>
+            <th class="border bg-blue-100 border-slate-300 ...">S.N.</th>
             <th class="border bg-blue-100 border-slate-300 ...">User_id</th>
             <th class="border bg-blue-100 border-slate-300 ...">Subtotal</th>
             <th class="border bg-blue-100  border-slate-300 ...">Delivery_Charge</th>
@@ -27,7 +28,7 @@
         <tbody>
              @foreach ($all_orders as $order)
             <tr>
-
+            <th class="border border-slate-300 ...">{{$order->id}}</th>
             <th class="border border-slate-300 ...">{{$order->user_id}}</th>
             <th class="border border-slate-300 ...">{{$order->subtotal}}</th>
             <th class="border border-slate-300 ...">{{$order->delivery_charge}}</th>

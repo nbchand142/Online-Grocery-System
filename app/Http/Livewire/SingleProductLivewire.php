@@ -14,7 +14,10 @@ class SingleProductLivewire extends Component
     public function render()
     {
         $product = Product::find($this->product_id);
-        return view('livewire.single-product-livewire',['product'=>$product])->layout('layouts.storefront');
+        $similar_products = Product::where('category_id',$product->category_id)->limit(5)->get();
+        return view('livewire.single-product-livewire',[
+            'product'=>$product,
+            'similar_products'=>$similar_products,
+        ])->layout('layouts.storefront');
     }
 }
- 

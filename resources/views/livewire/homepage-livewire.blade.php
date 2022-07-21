@@ -4,12 +4,12 @@
 	<section class="pt-5">
 		<div class="container max-w-screen-xl mx-auto px-4">
 
-			<article class="p-4 bg-white border border-gray-200 shadow-sm rounded-md">
+			<article class="p-4 bg-green-500 text-black border border-gray-200 shadow-sm rounded-md">
 				<div class="flex flex-col md:flex-row">
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Automobiles</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Electronics</a>
 							</li>
 							<li>
 								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Clothes and wear</a>
@@ -18,26 +18,18 @@
 								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Home interiors</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Computer and tech</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Dry foods</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Tools, equipments</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Stationary</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Sports and outdoor</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Sports</a>
 							</li>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Animal and pets</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Drinks</a>
 							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Men’s clothing</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Women’s clothing</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">More category</a>
-							</li>
+							
 						</ul>
 					</aside>
 					<main class="md:w-3/4 flex-auto">
@@ -80,7 +72,7 @@
 					<!-- COMPONENT: PRODUCT CARD -->
 					<article class="shadow-sm rounded bg-white border border-gray-200">
 						<a href="#" class="relative block p-1">
-							<img src="images/items/10.jpg" class="mx-auto w-auto" style="height: 250px" height="250" alt="Product title here">
+							<img src="image/shampoo.jpg" class="mx-auto w-auto" style="height: 250px" height="250" alt="Product title here">
 							<span class="inline-block px-3 py-1 text-sm bg-red-100 text-red-600 rounded-full absolute left-3 top-3">
 								Offer
 							</span>
@@ -92,7 +84,7 @@
 							<h6>
 								<a href="{{route('product',$product->id)}}" class="text-gray-600 hover:text-blue-500">{{$product->name}}</a>
 							</h6>
-							<p class="text-sm text-gray-400">Sizes: S, M, XL</p>
+							
 							<span class="font-semibold">Rs {{$product->price}}</span>
 						</div>
 					</article>
@@ -102,65 +94,5 @@
 			</div> <!-- grid .// -->
 		</div>
 	</section>
-	<!--  SECTION-CONTENT  //END -->
 
-
-	<!-- SECTION-INFOBLOCK -->
-	<section class="pb-10">
-		<div class="container max-w-screen-xl mx-auto px-4">
-
-			<article class="shadow-sm rounded bg-white border border-gray-200 p-4">
-				<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-green-200">
-							<i class="fa fa-truck fa-lg text-green-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">Free shipping</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-yellow-200">
-							<i class="fa fa-star fa-lg text-yellow-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">High quality</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-red-200">
-							<i class="fa fa-envelope fa-lg text-red-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">Customer support</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-blue-200">
-							<i class="fa fa-tag fa-lg text-blue-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">Reasonable Prices</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-				</div>
-			</article>
-		</div> <!-- container .// -->
-	</section>
-	<!-- SECTION-INFOBLOCK //END -->
 </div>
