@@ -64,12 +64,9 @@
 		<div class="container max-w-screen-xl mx-auto px-4">
 			<!-- menu -->
 			<nav class="hidden lg:flex flex-1 items-center py-1">
-				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="#"> Category </a>
-				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="#"> About </a>
-				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="#"> Services </a>
-				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="#"> Projects </a>
-				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="#"> Offers </a>
-				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="#"> Others </a>
+				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="/"> Home </a>
+				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="/admin/products"> Product </a>
+				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="/admin/categories"> Category </a>
 			</nav>
 			<!-- menu //end -->
 		</div> <!-- container //end -->
