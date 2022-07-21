@@ -9,7 +9,7 @@
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Electronics</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="/admin/products">Electronics</a>
 							</li>
 							<li>
 								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Clothes and wear</a>
