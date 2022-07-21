@@ -9,27 +9,8 @@
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>
 							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Electronics</a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="/admin/products">Electronics</a>
 							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Clothes and wear</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Home interiors</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Dry foods</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Stationary</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Sports</a>
-							</li>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#">Drinks</a>
-							</li>
-							
 						</ul>
 					</aside>
 					<main class="md:w-3/4 flex-auto">
@@ -72,7 +53,7 @@
 					<!-- COMPONENT: PRODUCT CARD -->
 					<article class="shadow-sm rounded bg-white border border-gray-200">
 						<a href="#" class="relative block p-1">
-							<img src="image/shampoo.jpg" class="mx-auto w-auto" style="height: 250px" height="250" alt="Product title here">
+							<img src="{{asset($product->image()->first()->img_src)}}" class="mx-auto w-auto" style="height: 250px" height="250" alt="Product title here">
 							<span class="inline-block px-3 py-1 text-sm bg-red-100 text-red-600 rounded-full absolute left-3 top-3">
 								Offer
 							</span>
@@ -84,7 +65,7 @@
 							<h6>
 								<a href="{{route('product',$product->id)}}" class="text-gray-600 hover:text-blue-500">{{$product->name}}</a>
 							</h6>
-							
+
 							<span class="font-semibold">Rs {{$product->price}}</span>
 						</div>
 					</article>
