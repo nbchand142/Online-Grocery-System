@@ -6,14 +6,15 @@
 		<nav id="sidebar" class='mx-lt-4 bg-green-500 ' >
 
 			<article class="mx-lt-4 bg-">
-				<div class="flex flex-col md:flex-row">
+				<div class="flex flex-col md:flex-row text-white">
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>
-							<li> 
+							<li>  @foreach($categories as $category)
+
 							
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#"> Electronic </a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#"> {{$category->name}} </a>
 								
-								
+								@endforeach
 							</li>
 						</ul>
 					</aside> 

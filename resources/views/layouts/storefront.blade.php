@@ -23,7 +23,7 @@
 			<div class="flex flex-wrap items-center">
 				<!-- Brand -->
 				<div class="flex-shrink-0 mr-5">
-					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand" border-radius=50% /> </a>
+					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand"  style = "border-radius:50%" /> </a>
 				</div>
 				<!-- Brand .//end -->
                 <div class="text-white flex items-center space-x-2 ml-5 "> 
