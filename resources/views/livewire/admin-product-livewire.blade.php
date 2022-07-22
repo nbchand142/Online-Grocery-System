@@ -11,27 +11,27 @@
     <table class="border-double border border-slate-400 ...">
         <thead>
             <tr>
-            <th class="border bg-blue-100 border-slate-300 ...">S.N.</th>
-            <th class="border bg-blue-100 border-slate-500 ...">Name</th>
-            <th class="border bg-blue-100 border-slate-500 ...">Category</th>
-            <th class="border bg-blue-100 border-slate-500 ...">Price</th>
-            <th class="border bg-blue-100 border-slate-500 ...">Description</th>
-            <th class="border bg-blue-100 border-slate-500 ...">Stock</th>
-            <th class="border bg-blue-100 border-slate-500 ..." colspan="2">Action</th>
+            <th class="border bg-blue-400 border-slate-500 ...">S.N.</th>
+            <th class="border bg-blue-400 border-slate-500 ...">Name</th>
+            <th class="border bg-blue-400 border-slate-500 ...">Category</th>
+            <th class="border bg-blue-400 border-slate-500 ...">Price</th>
+            <th class="border bg-blue-400 border-slate-500 ...">Description</th>
+            <th class="border bg-blue-400 border-slate-500 ...">Stock</th>
+            <th class="border bg-blue-400 border-slate-500 ..." colspan="2">Action</th>
 
             </tr>
         </thead>
         <tbody>
              @foreach ($all_products as $product)
             <tr>
-            <th class="border border-slate-300 ...">{{$product->id}}</th>
-            <th class="border border-slate-300 ...">{{$product->name}}</th>
-            <th class="border border-slate-300 ...">{{$product->category_id}}</th>
-            <th class="border border-slate-300 ...">{{$product->price}}</th>
-             <th class="border border-slate-300 ...">{{$product->description}}</th>
-            <th class="border border-slate-300 ...">{{$product->stock}}</th>
-            <th class="border border-slate-300 ...">Deactivate </th>
-            <th class="border border-slate-300 ..."> <a href="{{route("admin.product.edit",$product->id)}}">Edit</a></th>
+            <td class="border border-slate-300 ...">{{$product->id}}</td>
+            <td class="border border-slate-300 ...">{{$product->name}}</td>
+            <td class="border border-slate-300 ...">{{$product->category_id}}</td>
+            <td class="border border-slate-300 ...">{{$product->price}}</td>
+            <td class="border border-slate-300 ...">{{$product->description}}</td>
+            <td class="border border-slate-300 ...">{{$product->stock}}</td>
+            <td class="border border-slate-300 ...">Deactivate </td>
+            <td class="border border-slate-300 ..."> <a href="{{route("admin.product.edit",$product->id)}}">Edit</a></td>
 
              </tr>
             @endforeach

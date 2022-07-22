@@ -11,5 +11,7 @@ class HomepageLivewire extends Component
     {
         $products = Product::all();
         return view('livewire.homepage-livewire',["products"=>$products])->layout('layouts.storefront');
+     
+        
     }
 }

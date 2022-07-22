@@ -1,21 +1,21 @@
 <div>
-<div class="flex justify-between">
+     <div class="flex justify-between">
 
-<x-slot name="header">
-        <div class="flex justify-between">
+     <x-slot name="header">
+        
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ __('Financial Status') }}
             </h2>
-            <a href="{{route('checkout')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">lineitems</a>
-        </div>
-    </x-slot>
+            
+        
+        </x-slot>
 
 
     
-   <div class="w-full max-w-xs">
-        <form class="bg-blue shadow-md rounded px-12 pt-12 pb-12 mb-12">
+        <div class="w-full max-w-xs">
+          <form class="bg-blue shadow-md rounded px-12 pt-12 pb-12 mb-12">
            
-        <div class="mb-4">
+            <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="user_id">
             User 
             </label>
@@ -88,13 +88,13 @@
             <input type="button" wire:click='save()' value="Update">
         </form>
     </div>
-<div>
-<x-slot name="header">
-        <div class="flex justify-between">
+
+  <x-slot name="header">
+        <div>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('Financial Status') }}
+                {{ __('Chack Iteam') }}
             </h2>
-            <a href="{{route('checkout')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Lineitems</a>
+            
         </div>
     </x-slot>
     <div class="w-full max-w-xs">

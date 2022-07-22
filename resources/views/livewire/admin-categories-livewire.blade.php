@@ -11,19 +11,19 @@
         <table class="border-double border border-slate-400 ...">
             <thead>
                 <tr>
-                <th class="border bg-blue-100 border-slate-500 ...">S.N.</th>
-                <th class="border bg-blue-100 border-slate-500 ...">Category Name</th>
-                <th class="border bg-blue-100 border-slate-500 ..." colspan="2">Action</th>
+                <th class="border bg-blue-400 border-slate-500 ...">S.N.</th>
+                <th class="border bg-blue-400 border-slate-500 ...">Category Name</th>
+                <th class="border bg-blue-400 border-slate-500 ..." colspan="2">Action</th>
 
                 </tr>
                 </thead>
                     <tbody>
                 @foreach ($all_categories as $category)
                 <tr>
-                <th class="border border-slate-300 ...">{{$category->id}}</th>
-                <th class="border border-slate-300 ...">{{$category->name}}</th>
-                <th class="border border-slate-300 ...">Deactivate </th>
-                <th class="border border-slate-300 ..."> <a href="{{route("admin.category.edit",$category->id)}}">Edit</a></th>
+                <td class="border border-slate-300 ...">{{$category->id}}</td>
+                <td class="border border-slate-300 ...">{{$category->name}}</td>
+                <td class="border border-slate-300 ...">Deactivate </td>
+                <td class="border border-slate-300 ..."> <a href="{{route("admin.category.edit",$category->id)}}">Edit</a></td>
 
                 </tr>
                 @endforeach

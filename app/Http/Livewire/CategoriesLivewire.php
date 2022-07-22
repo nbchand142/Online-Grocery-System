@@ -14,7 +14,7 @@ class CategoriesLivewire extends Component
 
     public function render()
     {
-        $all_categories = category::all();
-        return view('livewire.categories-livewire',['all_categories'=>$all_categories]);
+        $categories = Category::all();
+        return view('livewire.categories-livewire',['categories'=>$categories]);
     }
 }

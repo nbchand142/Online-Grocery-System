@@ -9,8 +9,7 @@ use Livewire\Component;
 class AdminOrderEditLivewire extends Component
 {
 
-    public $order_id,$user_id, $subtotal, $delivery_charge, $tax, $discount, $total, $status,
-     $order_note, $financial_status;
+    public $order_id,$status,$order_note, $financial_status;
 
     function mount ($order_id){
         $this->order = $order_id;

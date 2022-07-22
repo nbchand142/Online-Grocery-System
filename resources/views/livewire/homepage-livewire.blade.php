@@ -3,17 +3,20 @@
 	<!--  MAIN SECTION  -->
 	<section class="pt-5">
 		<div class="container max-w-screen-xl mx-auto px-4">
-		<nav id="sidebar" class='mx-lt-4 bg-primary' >
+		<nav id="sidebar" class='mx-lt-4 bg-green-500 ' >
 
-			<article class="mx-lt-4 bg-primary">
+			<article class="mx-lt-4 bg-">
 				<div class="flex flex-col md:flex-row">
 					<aside class="md:w-1/4 flex-auto mb-4 pr-4 md:mb-0">
 						<ul>
-							<li>
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="/admin/products">Electronics</a>
+							<li> 
+							
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#"> Electronic </a>
+								
+								
 							</li>
 						</ul>
-					</aside>
+					</aside> 
 					<main class="md:w-3/4 flex-auto">
 						<!-- banner-main -->
 						<article class="bg-blue-500 p-6 lg:p-16 rounded w-full h-full">
