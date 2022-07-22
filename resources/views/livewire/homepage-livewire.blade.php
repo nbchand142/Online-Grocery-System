@@ -66,11 +66,6 @@
 							<h6>
 								<a href="{{route('product',$product->id)}}" class="text-gray-600 hover:text-blue-500">{{$product->name}}</a>
 							</h6>
-<<<<<<< HEAD
-							<p class="text-sm text-gray-400">Sizes: S, M, XL</p>
-=======
-
->>>>>>> c4ed4cdc61a23aa5cb81837d683f60764228fc8a
 							<span class="font-semibold">Rs {{$product->price}}</span>
 						</div>
 					</article>
