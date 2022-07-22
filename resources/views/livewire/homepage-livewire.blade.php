@@ -82,55 +82,7 @@
 	<section class="pb-10">
 		<div class="container max-w-screen-xl mx-auto px-4">
 
-			<article class="shadow-sm rounded bg-white border border-gray-200 p-4">
-				<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-green-200">
-							<i class="fa fa-truck fa-lg text-green-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">Free shipping</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-yellow-200">
-							<i class="fa fa-star fa-lg text-yellow-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">High quality</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-red-200">
-							<i class="fa fa-envelope fa-lg text-red-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">Customer support</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
-
-					<!-- item -->
-					<figure class="flex items-center mr-10">
-						<div class="flex mr-5 items-center justify-center mr-4 rounded w-11 h-11 bg-blue-200">
-							<i class="fa fa-tag fa-lg text-blue-600"></i>
-						</div>
-						<figcaption>
-							<p class="font-medium">Reasonable Prices</p>
-							<p class="text-sm text-gray-500">Have you ever finally just</p>
-						</figcaption>
-					</figure>
-					<!-- item end -->
+			
 				</div>
 			</article>
 		</div> <!-- container .// -->
