@@ -11,7 +11,7 @@
 						<ul>
 							<li> 
 							
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#"> Electronic </a>
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href=""> Electronic </a>
 								
 								
 							</li>
