@@ -6,7 +6,9 @@ use Livewire\Component;
 
 class CheckoutLivewire extends Component
 {
-    function orderConfirm(){}
+    function orderConfirm(){
+        
+    }
     public function render()
     {
         return view('livewire.checkout-livewire');
