@@ -11,13 +11,13 @@
 						<ul>
 							<li>  @foreach($categories as $category)
 
-							
-								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="#"> {{$category->name}} </a>
-								
+
+								<a class="block px-3 py-2 hover:bg-blue-50 rounded-md hover:text-blue-600" href="{{route('categories',$category->id)}}"> {{$category->name}} </a>
+
 								@endforeach
 							</li>
 						</ul>
-					</aside> 
+					</aside>
 					<main class="md:w-3/4 flex-auto">
 						<!-- banner-main -->
 						<article class="bg-blue-500 p-6 lg:p-16 rounded w-full h-full">

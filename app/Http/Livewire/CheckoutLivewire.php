@@ -7,10 +7,10 @@ use Livewire\Component;
 class CheckoutLivewire extends Component
 {
     function orderConfirm(){
-        
+
     }
     public function render()
     {
-        return view('livewire.checkout-livewire');
+        return view('livewire.checkout-livewire')->layout('layouts.storefront');
     }
 }

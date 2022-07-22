@@ -26,7 +26,7 @@
 					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand"  style = "border-radius:50%" /> </a>
 				</div>
 				<!-- Brand .//end -->
-                <div class="text-white flex items-center space-x-2 ml-5 "> 
+                <div class="text-white flex items-center space-x-2 ml-5 ">
 					<h1>Online Grocery System</h1>
 				</div>
 				<div class="col-md-2 float-left text-white flex items-center space-x-2 ml-5"><p> Date/Time: <span id="datetime"></span></p>
@@ -60,7 +60,7 @@
 						<span class="hidden lg:inline ml-1 ">Sign in</span>
 					</a>
 
-					
+
 
 					<a class="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300" href="{{route('cart')}}">
 						<i class="text-gray-400 w-5 fa fa-shopping-cart"></i>
@@ -70,13 +70,13 @@
 				<!-- Actions .//end -->
 
 				<!-- mobile-only -->
-				
+
 				<!-- mobile-only //end  -->
 
 			</div> <!-- flex grid //end -->
 		</div> <!-- container //end -->
 	</header>
-	
+
 	<nav class="border-b bg-blue-600 text-white">
 		<div class="container max-w-screen-xl mx-auto px-4">
 			<!-- menu -->
@@ -92,7 +92,7 @@
 
 
     <main>
-        {{ $slot }}1`
+        {{ $slot }}
     </main>
 
 	<footer class="bg-blue-600">
@@ -106,7 +106,7 @@
 					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand" border-radius=50% /> </a>
 						<p class="my-4">
 							Company name. <br> Online Grocety System <br>
-							
+
 						</p>
 					<!-- col .// -->
 				</div>  <!-- grid .// -->
@@ -114,6 +114,8 @@
 		</section>
 		<!-- section footer top end -->
 
-		
+        @stack('modals')
+        @livewireScripts
+
 </body>
 </html>
