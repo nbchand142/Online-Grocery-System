@@ -26,17 +26,16 @@
 					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand"  style = "border-radius:50%" /> </a>
 				</div>
 				<!-- Brand .//end -->
-                <div class="text-white flex items-center space-x-2 ml-5 ">
-					<b><p class="text-3xl ...">Online Grocery System</p></b>
-
+                <div class="text-white text-3xl flex items-center space-x-2 ml-5 ">
+					<h1> <b> Online Grocery System</b></h1>
 				</div>
-				<div class="col-md-2 float-left text-white flex items-center space-x-2 ml-5"><p> Date/Time: <span id="datetime"></span></p>
+				<div class="col-md-2 float-left text-white text-xl flex items-center space-x-2 ml-5"><p> Date/Time: <span id="datetime"></span></p>
         <script>
         var dt = new Date();
         document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         </script>
       </div>
-      <div class="col-md-2 float-left text-white flex items-center space-x-1 ml-2">
+      <div class="col-md-2 float-left text-white text-xl flex items-center space-x-1 ml-2">
         <script>
         function showtime(){
         var d = new Date();
@@ -98,17 +97,17 @@
         {{ $slot }}
     </main>
 
-	<footer class="bg-blue-600">
+	<footer class="bg-blue-600 mt-5">
 		<!-- section footer top -->
 
-		<section class="py-10 text-white">
+		<section class="py-0 text-white">
 			<div class="container max-w-screen-xl mx-auto px-4">
 
 				<div class="flex flex-wrap">
-					<aside class="w-full md:w-1/3 lg:w-1/4 mb-5">
-					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand" border-radius=50% /> </a>
+					<aside class="w-full md:w-1/3 lg:w-1/4 mb-0">
+					<a href="/"> <img src="{{asset('image/army logo.png')}}" height="80" width="80" alt="Brand" style="border-radius:50%" /> </a>
 						<p class="my-4">
-							Company name. <br> Online Grocety System <br>
+							Company Name. <br> Online Grocety System <br>
 
 						</p>
 					<!-- col .// -->

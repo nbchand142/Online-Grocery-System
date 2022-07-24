@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Models\Category;
 use App\Models\Product;
 use Livewire\Component;
 
@@ -18,6 +18,12 @@ class AdminProductLivewire extends Component
     public function render()
     {
         $all_products = Product::all();
-        return view('livewire.admin-product-livewire',['all_products'=>$all_products]);
+        $categories = Category::all();
+
+        return view('livewire.admin-product-livewire',
+        ['all_products'=>$all_products ,
+        'categories'=>$categories
+    ]);
+
     }
 }

@@ -8,8 +8,10 @@ use App\Models\ProductImage;
 use Livewire\WithFileUploads;
 use Livewire\Component;
 
+
+
 class AdminProductEditLivewire extends Component
-{
+{  
     use WithFileUploads;
 
     public $product_id, $name, $category_id, $price, $description, $stock, $images;
@@ -36,6 +38,11 @@ class AdminProductEditLivewire extends Component
 
         $product->active = 1;
         $product->save();
+       
+        foreach($this->images as $image){
+            $uploaded = $image->store('product_image','public');
+            $product->image()->create(['img_src'=>'storage/'.$uploaded]);
+        }
 
         foreach($this->images as $image){
             $uploaded = $image->store('product_image','public');
@@ -45,9 +52,7 @@ class AdminProductEditLivewire extends Component
         
 
         return redirect(route('admin.products'));
-    }
-
-   
+      }
     public function render()
     {
         $categories = Category::all();
