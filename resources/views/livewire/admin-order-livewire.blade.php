@@ -2,44 +2,44 @@
     <x-slot name="header">
         <div class="flex justify-between">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('orders') }}
+                {{ __('Orders') }}
             </h2>
         
         </div>
     </x-slot>
                  
-        <table class="border-double border border-slate-400 ...">
+    <table class="border border-soild border-black mx-auto mt-10 w-8/12">
         <thead>
             <tr>
-            <th class="border bg-blue-400 border-slate-500 ...">S.N.</th>
-            <th class="border bg-blue-400 border-slate-500 ...">User_id</th>
-            <th class="border bg-blue-400 border-slate-500 ...">Subtotal</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Delivery_Charge</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Tax</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Discount</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Total</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Status</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Ordre_Note</th>
-            <th class="border bg-blue-400  border-slate-500 ...">Financial_status</th>
-            <th class="border bg-blue-400  border-slate-500 ..." colspan="2">Action</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >S.N.</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >User</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Subtotal</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Delivery_Charge</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Tax</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Discount</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Total</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Status</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Ordre_Note</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >Financial_status</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white ..."  colspan="2">Action</th>
 
             </tr>
         </thead>
-        <tbody>
+        <tbody class=" text-center">
              @foreach ($all_orders as $order)
             <tr>
-            <td class="border border-slate-300 ...">{{$order->id}}</td>
-            <td class="border border-slate-300 ...">{{$order->user_id}}</td>
-            <td class="border border-slate-300 ...">{{$order->subtotal}}</td>
-            <td class="border border-slate-300 ...">{{$order->delivery_charge}}</td>
-            <td class="border border-slate-300 ...">{{$order->tax}}</td>
-            <td class="border border-slate-300 ...">{{$order->discount}}</td>
-            <td class="border border-slate-300 ...">{{$order->total}}</td>
-            <td class="border border-slate-300 ...">{{$order->status}}</td>
-            <td class="border border-slate-300 ...">{{$order->order_note}}</td>
-            <td class="border border-slate-300 ...">{{$order->financial_status}}</td>
-            <td class="border border-slate-300 ...">Deactivate</td>
-            <td class="border border-slate-300 ..."><a href="{{route("admin.order.edit",$order->id)}}">Edit</a></td>
+            <td class="border-soild border-2 border-black ..."> {{$order->id}}</td>
+            <td class="border-soild border-2 border-black ..."> {{\App\Models\User::find($order->user_id)->name}}</td>
+            <td class="border-soild border-2 border-black ..."> {{$order->subtotal}}</td>
+            <td class="border-soild border-2 border-black ..."> {{$order->delivery_charge}}</td>
+            <td class="border-soild border-2 border-black ...">{{$order->tax}}</td>
+            <td class="border-soild border-2 border-black ...">{{$order->discount}}</td>
+            <td class="border-soild border-2 border-black ...">{{$order->total}}</td>
+            <td class="border-soild border-2 border-black ...">{{$order->status}}</td>
+            <td class="border-soild border-2 border-black ...">{{$order->order_note}}</td>
+            <td class="border-soild border-2 border-black ...">{{$order->financial_status}}</td>
+            <td class="border-soild border-2 border-black ..."> <a class="text-white bg-green-600 hover:bg-blue-800 rounded-lg text-l px-5 py-0.5 dark:bg-green-600 dark:hover:bg-blue-700" href="{{route("admin.order.edit",$order->id)}}">Edit</a></td>
+            <td class="border-soild border-2 border-black ..."> <a class="text-white bg-red-700 hover:bg-red-800 rounded-lg text-l px-5 py-0.5 dark:bg-red-500 dark:hover:bg-red-700" href="">Deactivate</a> </td>
 
              </tr>
             @endforeach

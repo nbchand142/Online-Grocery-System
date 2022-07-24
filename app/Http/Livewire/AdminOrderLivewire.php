@@ -2,6 +2,8 @@
 
 namespace App\Http\Livewire;
 use App\Models\Order;
+use App\Models\User;
+
 use Livewire\Component;
 
 class AdminOrderLivewire extends Component
@@ -22,6 +24,10 @@ class AdminOrderLivewire extends Component
     public function render()
     {
         $all_orders = Order::all();
-        return view('livewire.admin-order-livewire',['all_orders'=>$all_orders]);
+    
+        return view('livewire.admin-order-livewire',
+        ['all_orders'=>$all_orders,
+        
+    ]);
     }
 }

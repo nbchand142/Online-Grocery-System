@@ -57,7 +57,7 @@
 				<div>
 					<!-- COMPONENT: PRODUCT CARD -->
 					<article class="shadow-sm rounded bg-white border border-gray-200">
-						<a href="#" class="relative block p-1">
+						<a href="{{route('product',$product->id)}}" class="relative block p-1">
 							<img src="{{asset($product->image()->first()->img_src)}}" class="mx-auto w-auto" style="height: 250px" height="250" alt="Product title here">
 							<span class="inline-block px-3 py-1 text-sm bg-red-100 text-red-600 rounded-full absolute left-3 top-3">
 								Offer
