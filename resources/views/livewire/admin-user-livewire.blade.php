@@ -5,7 +5,7 @@
         </h2>
 
     </x-slot>
-    <table class="border-double border border-slate-400 mx-auto mt-10 w-8/12">
+    <table class="border border-double border-black mx-auto mt-10 w-6/12">
         <thead>
             <tr>
                 <th class="border bg-blue-400 border-slate-500"> S.N.</th>

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-blue-300 text-white border-b border-gray-200">
+<nav x-data="{ open: false }" class="bg-blue-500 border-b border-gray-200">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -9,7 +9,7 @@
                         <img src="{{asset('image/army logo.png')}}" height="80px" width="80px" style = "border-radius:50%">
                     </a>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" class="text-white">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-white">
                     <x-jet-nav-link href="/" :active="request()->routeIs('dashboard')">
                         {{ __('Home') }}
                     </x-jet-nav-link>

@@ -26,7 +26,7 @@
 
             </tr>
         </thead>
-        <tbody>
+        <tbody class=" text-center">
              @foreach ($all_orders as $order)
                 <tr>
                     <td class="border border-slate-300">{{$order->id}}</td>
@@ -47,5 +47,5 @@
             @endforeach
         </tbody>
     </table>
-</center>
+
 </div>
