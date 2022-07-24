@@ -2,10 +2,11 @@
 
 namespace App\Http\Livewire;
 use App\Models\Category;
+use App\Models\Product;
 use Livewire\Component;
 
 class CategoriesLivewire extends Component
-{ 
+{
     public $category_id;
      function mount($category_id)
      {
@@ -14,7 +15,11 @@ class CategoriesLivewire extends Component
 
     public function render()
     {
-        $categories = Category::all();
-        return view('livewire.categories-livewire',['categories'=>$categories]);
+        $products = Product::where('category_id',$this->category_id)->get();
+        $category = Category::find($this->category_id);
+        return view('livewire.categories-livewire',[
+            'category'=>$category,
+            'products'=>$products,
+            ])->layout('layouts.storefront');
     }
 }

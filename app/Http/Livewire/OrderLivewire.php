@@ -14,7 +14,8 @@ class OrderLivewire extends Component
             $this->order_id = $order_id;
          }
     public function render()
-    {     $all_orders = Order::where('user_id',auth()->user()->id)->get();
-        return view('livewire.order-livewire',['all_orders'=>$all_orders]);
+    {
+        $all_orders = Order::where('user_id',auth()->user()->id)->get();
+        return view('livewire.order-livewire',['all_orders'=>$all_orders])->layout('layouts.storefront');
     }
 }

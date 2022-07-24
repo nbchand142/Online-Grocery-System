@@ -1,18 +1,17 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-blue-300 text-white border-b border-gray-200">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <img src="{{asset('image/army logo.png')}}" height="50px" width="50px">
+                    <a href="/">
+                        <img src="{{asset('image/army logo.png')}}" height="80px" width="80px" style = "border-radius:50%">
                     </a>
                 </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" class="text-white">
+                    <x-jet-nav-link href="/" :active="request()->routeIs('dashboard')">
+                        {{ __('Home') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('admin.users') }}" :active="request()->routeIs('admin.users')">
                         {{ __('Users') }}
@@ -27,14 +26,6 @@
                   <x-jet-nav-link href="{{ route('admin.categories') }}" :active="request()->routeIs('admin.categories')">
                         {{ __('Categories') }}
                     </x-jet-nav-link> 
-
-
-
-
-
-
-
-
                 </div>
             </div>
 

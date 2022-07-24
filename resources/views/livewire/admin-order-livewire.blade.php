@@ -12,7 +12,7 @@
         <thead>
             <tr>
             <th class="border bg-blue-400 border-slate-500 ...">S.N.</th>
-            <th class="border bg-blue-400 border-slate-500 ...">User_id</th>
+            <th class="border bg-blue-400 border-slate-500 ...">User</th>
             <th class="border bg-blue-400 border-slate-500 ...">Subtotal</th>
             <th class="border bg-blue-400  border-slate-500 ...">Delivery_Charge</th>
             <th class="border bg-blue-400  border-slate-500 ...">Tax</th>
@@ -29,7 +29,7 @@
              @foreach ($all_orders as $order)
             <tr>
             <td class="border border-slate-300 ...">{{$order->id}}</td>
-            <td class="border border-slate-300 ...">{{$order->user_id}}</td>
+            <td class="border border-slate-300 ...">{{\App\Models\User::find($order->user_id)->name}}</td>
             <td class="border border-slate-300 ...">{{$order->subtotal}}</td>
             <td class="border border-slate-300 ...">{{$order->delivery_charge}}</td>
             <td class="border border-slate-300 ...">{{$order->tax}}</td>

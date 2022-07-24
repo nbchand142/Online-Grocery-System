@@ -4,11 +4,15 @@ namespace App\Http\Livewire;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\ProductImage;
+use Livewire\WithFileUploads;
 use Livewire\Component;
 
 class AdminProductEditLivewire extends Component
 {
-    public $product_id, $name, $category_id, $price, $description, $stock;
+    use WithFileUploads;
+
+    public $product_id, $name, $category_id, $price, $description, $stock, $images;
     function mount($product_id){
         $this->product_id = $product_id;
         $product = Product::find($this->product_id);
@@ -17,7 +21,11 @@ class AdminProductEditLivewire extends Component
         $this->price = $product->price;
         $this->description = $product->description;
         $this->stock = $product->stock;
+
     }
+
+
+   
     function save(){
         $product = Product::find($this->product_id);
         $product->name = $this->name;
@@ -25,11 +33,21 @@ class AdminProductEditLivewire extends Component
         $product->price = $this->price;
         $product->description = $this->description;
         $product->stock = $this->stock;
+
         $product->active = 1;
         $product->save();
 
+        foreach($this->images as $image){
+            $uploaded = $image->store('product_image','public');
+    
+            $product->image()->create(['img_src'=>'storage/'.$uploaded]);
+        }
+        
+
         return redirect(route('admin.products'));
     }
+
+   
     public function render()
     {
         $categories = Category::all();
