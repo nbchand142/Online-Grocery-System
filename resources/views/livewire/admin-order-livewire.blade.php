@@ -8,7 +8,7 @@
         </div>
     </x-slot>
                  
-    <table class="border border-soild border-black mx-auto mt-10 w-8/12">
+    <table class="border border-double border-black mx-auto mt-10 w-8/12">
         <thead>
             <tr>
             <th class="border-soild border-2 bg-blue-600 border-black text-white ..." >S.N.</th>
