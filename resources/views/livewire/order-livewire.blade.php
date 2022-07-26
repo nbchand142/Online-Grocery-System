@@ -7,18 +7,18 @@
 
         </div>
     </x-slot>
-    <center>
+    
 
-        <table class="border-double border border-slate-400 mx-auto mt-10 w-8/12">
+    <table class="border border-double border-black mx-auto mt-10 w-8/12">
         <thead>
             <tr>
-            <th class="border bg-blue-400 border-slate-500">S.N.</th>
-            <th class="border bg-blue-400 border-slate-500">Customer Name</th>
-            <th class="border bg-blue-400 border-slate-500">Subtotal</th>
-            <th class="border bg-blue-400  border-slate-500">Tax</th>
-            <th class="border bg-blue-400  border-slate-500">Discount</th>
-            <th class="border bg-blue-400  border-slate-500">Total</th>
-            <th class="border bg-blue-400  border-slate-500">Status</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">S.N.</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">Customer Name</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">Subtotal</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">Tax</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">Discount</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">Total</th>
+            <th class="border-double border-2 bg-blue-600 border-black text-white">Status</th>
 
 
 
@@ -29,19 +29,19 @@
         <tbody class=" text-center">
              @foreach ($all_orders as $order)
                 <tr>
-                    <td class="border border-slate-300">{{$order->id}}</td>
-                    <td class="border border-slate-300">{{\App\Models\User::find($order->user_id)->name}}</td>
-                    <td class="border border-slate-300">{{$order->subtotal}}</td>
-                    <td class="border border-slate-300">{{$order->tax}}</td>
-                    <td class="border border-slate-300">{{$order->discount}}</td>
-                    <td class="border border-slate-300">{{$order->total}}</td>
-                    <td class="border border-slate-300">{{$order->status}}</td>
+                    <td class="border-double border-2 border-black">{{$order->id}}</td>
+                    <td class="border-double border-2 border-black">{{\App\Models\User::find($order->user_id)->name}}</td>
+                    <td class="border-double border-2 border-black">{{$order->subtotal}}</td>
+                    <td class="border-double border-2 border-black">{{$order->tax}}</td>
+                    <td class="border-double border-2 border-black">{{$order->discount}}</td>
+                    <td class="border-double border-2 border-black">{{$order->total}}</td>
+                    <td class="border-double border-2 border-black">{{$order->status}}</td>
                 </tr>
                 @foreach ($order->line_item()->get() as $line_item)
                 <tr>
-                    <td class="border border-slate-300"></td>
-                    <td class="border border-slate-300 text-right">{{\App\Models\Product::find($line_item->product_id)->name}}</td>
-                    <td class="border border-slate-300">{{$line_item->total}}</td>
+                    <td class="border-double border-2 border-black"></td>
+                    <td class="border-double border-2 border-black">{{\App\Models\Product::find($line_item->product_id)->name}}</td>
+                    <td class="border-double border-2 border-black">{{$line_item->total}}</td>
                 </tr>
                 @endforeach
             @endforeach
