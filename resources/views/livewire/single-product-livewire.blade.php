@@ -7,18 +7,24 @@
 				<aside>
 					<!-- gallery -->
 					<div class="border border-gray-200 shadow-sm p-3 text-center rounded mb-5">
-						<img class="object-cover inline-block" width="400" src="{{asset($product->image()->first()->img_src)}}" alt="Product title">
+						<img id="mainImage" class="object-cover inline-block" width="400" src="{{asset($product->image()->first()->img_src)}}" alt="Product title">
 					</div>
 					<div class="space-x-2 overflow-auto text-center whitespace-nowrap">
                         @foreach($product->image()->get() as $photo)
 						<a href="#" class="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500">
-							<img class="w-14 h-14" src="                        {{asset($photo->img_src)}}
-                            " alt="Product title">
+							<img class="w-14 h-14 smallImg" src="{{asset($photo->img_src)}}" alt="Product title">
 						</a>
                         @endforeach
 					</div>
 					<!-- gallery end.// -->
 				</aside>
+                <div wire:ignore>
+                    <script>
+                        $(".smallImg").click(function(){
+                            $("#mainImage").attr('src',$(this).attr('src'));
+                        });
+                    </script>
+                </div>
 				<main>
 					<h2 class="font-semibold text-2xl mb-4">
                         {{$product->name}}
