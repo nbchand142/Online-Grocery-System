@@ -20,6 +20,9 @@ class CartLivewire extends Component
         else $this->cart=[];
     }
     public function confirmOrder(){
+        if(!auth()->user()){
+            return redirect(route('login'));
+        }
         $order = new Order();
         $order->user_id = auth()->user()->id;
         $subtotal = 0;
@@ -42,10 +45,11 @@ class CartLivewire extends Component
             $line->quantity = 1;
             $line->price_per_item = $product->price;
             $line->total = $line->price_per_item * $line->quantity;
-
             $subtotal = $subtotal + $line->total;
-
             $line->save();
+
+            $product->stock = $product->stock-$line->quantity;
+            $product->save();
         }
 
         $order->subtotal = $subtotal;

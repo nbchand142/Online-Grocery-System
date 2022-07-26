@@ -8,12 +8,11 @@ use Livewire\Component;
 class AdminProductLivewire extends Component
 {
     public $product_id;
-        function activate($product_id){
-            $this->product_id = $product_id;
-        }
-            function deactivate($product_id){
-            $this->product_id = $product_id;
-        }
+    function toggleActivation($product_id){
+        $product = Product::find($product_id);
+        $product->active = $product->active==1 ? 0 : 1;
+        $product->save();
+    }
 
     public function render()
     {

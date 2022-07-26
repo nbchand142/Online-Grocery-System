@@ -31,7 +31,7 @@
             <td class="border-double border-2 border-black">{{$product->description}}</td>
             <td class="border-double border-2 border-black">{{$product->stock}}</td>
             <td class="border-double border-2 border-black"> <a class="text-white bg-green-600 hover:bg-blue-800 rounded-lg text-l px-5 py-0.5 dark:bg-green-600 dark:hover:bg-blue-700" href="{{route("admin.product.edit",$product->id)}}">Edit</a></td>
-            <td class="border-double border-2 border-black"> <a class="text-white bg-red-700 hover:bg-red-800 rounded-lg text-l px-5 py-0.5 dark:bg-red-500 dark:hover:bg-red-700" href="">Deactivate</a> </td>
+            <td class="border-double border-2 border-black"> <button class="text-white {{$product->active == '1' ? " dark:bg-red-500 dark:hover:bg-red-700 bg-red-700 hover:bg-red-800" : " dark:bg-green-500 dark:hover:bg-green-700 bg-green-700 hover:bg-green-800"}} rounded-lg text-l px-5 py-0.5" wire:click='toggleActivation({{$product->id}})'>{{$product->active == '1' ? "Deactivate" : "Activate"}}</button> </td>
 
              </tr>
             @endforeach

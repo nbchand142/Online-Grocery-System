@@ -10,7 +10,9 @@
 		</div><!-- /.container -->
 	</section>
 	<!--  PAGE HEADER .//END  -->
-
+    <div wire:ignore>
+        <script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
+    </div>
 	<section class="py-10">
 		<div class="container max-w-screen-xl mx-auto px-4">
 
@@ -58,7 +60,10 @@
 
 	</main>
 	<aside class="md:w-1/4">
+        @guest
+        <a href='{{route('login')}}' class="px-4 py-3 mb-2 inline-block text-lg w-full text-center font-medium text-white bg-green-600 border border-transparent rounded-md hover:bg-green-700">Please signin to checkout</a>
 
+        @else
 		<article class="border border-gray-200 bg-white shadow-sm rounded mb-5 p-3 lg:p-5">
 		    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder=" Enter Order Note" wire:model='order_note'> <br> <br>
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder=" Enter Delivery Address" wire:model='delivery_address'>
@@ -68,13 +73,50 @@
 					<span>Rs {{$total}}</span>
 				</li>
 			</ul>
-            
+            <button id="payment-button" class="px-4 py-3 mb-2 inline-block text-lg w-full text-center font-medium text-white bg-purple-600 border border-transparent rounded-md hover:bg-purple-700">Pay with Khalti</button>
+
             <button wire:click='confirmOrder()' class="px-4 py-3 mb-2 inline-block text-lg w-full text-center font-medium text-white bg-green-600 border border-transparent rounded-md hover:bg-green-700">Confirm Order</button>
 
+            <div wire:ignore>
+                <script>
+                    var config = {
+                        // replace the publicKey with yours
+                        "publicKey": "test_public_key_dc74e0fd57cb46cd93832aee0a390234",
+                        "productIdentity": "1234567890",
+                        "productName": "Online Grocery Cart",
+                        "productUrl": "{{route('homepage')}}",
+                        "paymentPreference": [
+                            "KHALTI",
+                            "EBANKING",
+                            "MOBILE_BANKING",
+                            "CONNECT_IPS",
+                            "SCT",
+                            ],
+                        "eventHandler": {
+                            onSuccess (payload) {
+                                // hit merchant api for initiating verfication
+                                console.log(payload);
+                            },
+                            onError (error) {
+                                console.log(error);
+                            },
+                            onClose () {
+                                console.log('widget is closing');
+                            }
+                        }
+                    };
+
+                    var checkout = new KhaltiCheckout(config);
+                    var btn = document.getElementById("payment-button");
+                    btn.onclick = function () {
+                        checkout.show({amount: {{$total*100}}});
+                    }
+                </script>
+            </div>
 			<a class="px-4 py-3 inline-block text-lg w-full text-center font-medium text-green-600 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100" href="/"> Back to shop </a>
 
 		</article> <!-- card end.// -->
-
+        @endguest
 	</aside> <!-- col.// -->
 </div> <!-- grid.// -->
 

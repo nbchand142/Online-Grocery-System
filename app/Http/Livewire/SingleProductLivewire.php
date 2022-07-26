@@ -30,7 +30,7 @@ class SingleProductLivewire extends Component
 
     public function render()
     {
-        $product = Product::find($this->product_id);
+        $product = Product::where('id',$this->product_id)->where('active','1')->first();
         $similar_products = Product::where('category_id',$product->category_id)->limit(5)->get();
         return view('livewire.single-product-livewire',[
             'product'=>$product,

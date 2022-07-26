@@ -10,7 +10,7 @@ class HomepageLivewire extends Component
 {
     public function render()
     {
-        $products = Product::all();
+        $products = Product::where('active','1')->get();
         $categories = Category::all();
         return view('livewire.homepage-livewire',[
             "categories"=>$categories,

@@ -21,7 +21,7 @@
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Status</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Ordre_Note</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Financial_status</th>
-            <th class="border-soild border-2 bg-blue-600 border-black text-white"  colspan="2">Action</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Action</th>
 
             </tr>
         </thead>
@@ -39,7 +39,6 @@
             <td class="border-soild border-2 border-black">{{$order->order_note}}</td>
             <td class="border-soild border-2 border-black">{{$order->financial_status}}</td>
             <td class="border-soild border-2 border-black"> <a class="text-white bg-green-600 hover:bg-blue-800 rounded-lg text-l px-5 py-0.5 dark:bg-green-600 dark:hover:bg-blue-700" href="{{route("admin.order.edit",$order->id)}}">Edit</a></td>
-            <td class="border-soild border-2 border-black"> <a class="text-white bg-red-700 hover:bg-red-800 rounded-lg text-l px-5 py-0.5 dark:bg-red-500 dark:hover:bg-red-700" href="">Deactivate</a> </td>
 
              </tr>
             @endforeach

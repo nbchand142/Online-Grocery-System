@@ -5,14 +5,14 @@
            <label class="block text-gray-700 text-sm font-bold mb-2" for="status">
               Status
             </label>
-                  
-                  <select class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"> chose the option
-                  <option value="Pending">Pending</option>
-                  <option value="Confirmed">Confirmed</option>
-                  <option value="Delivered">Delivered</option>
-                  <option value="In_Transit">In_Transit</option>
-                  <option value="Returned">Returned</option>
-                  <option value="Canceled">Canceled</option>
+
+                  <select wire:model='status' class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"> chose the option
+                  <option value="pending">Pending</option>
+                  <option value="confirmed">Confirmed</option>
+                  <option value="delivered">Delivered</option>
+                  <option value="in_transit">In Transit</option>
+                  <option value="returned">Returned</option>
+                  <option value="canceled">Canceled</option>
 
                   </select>
       </div>
@@ -26,16 +26,16 @@
           <label class="block text-gray-700 text-sm font-bold mb-2" for="financial_status">
             Financial Status
           </label>
-                
-          <select class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"> chose the option
-                  <option value="Pending">Paid</option>
-                  <option value="Confirmed">Unpaid</option>
-                  <option value="Delivered">Partially Paid</option>
-                  <option value="Returned">Refunded</option>
+
+          <select wire:model='financial_status' class="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"> chose the option
+                  <option value="paid">Paid</option>
+                  <option value="unpaid">Unpaid</option>
+                  <option value="partially_paid">Partially Paid</option>
+                  <option value="refunded">Refunded</option>
 
            </select>
         </div>
-   
+
         <input type="button" wire:click='save()' value="Update">
 
     <form>
@@ -44,4 +44,4 @@
 
 
 
-    
+
