@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\LineItem;
 use App\Models\Order;
 use App\Models\Product;
+use App\Models\Category;
 use Livewire\Component;
 
 class DashboardLivewire extends Component
@@ -18,6 +19,8 @@ class DashboardLivewire extends Component
         }
         $products = Product::whereIn('id',array_keys($each_product_id))->get();
         $total_sales = Order::selectRaw('SUM(total) as all_total')->whereDate('created_at',date('Y-m-d'))->first();
-        return view('livewire.dashboard-livewire',['products'=>$products, 'quantity'=>$each_product_id,'order_total'=>$total_sales]);
+        
+        
+        return view('livewire.dashboard-livewire',['products'=>$products, 'quantity'=>$each_product_id,'order_total'=>$total_sales,]);
     }
 }

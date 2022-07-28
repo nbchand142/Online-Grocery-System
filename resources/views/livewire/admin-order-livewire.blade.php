@@ -14,13 +14,13 @@
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >S.N.</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >User</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Subtotal</th>
-            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Delivery_Charge</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Delivery Charge</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Tax</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Discount</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Total</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Status</th>
-            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Ordre_Note</th>
-            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Financial_status</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Ordre Note</th>
+            <th class="border-soild border-2 bg-blue-600 border-black text-white" >Financial Status</th>
             <th class="border-soild border-2 bg-blue-600 border-black text-white" >Action</th>
 
             </tr>

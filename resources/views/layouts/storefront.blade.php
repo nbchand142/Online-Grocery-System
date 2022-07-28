@@ -81,7 +81,7 @@
 	</header>
 
 	<nav class="border-b bg-blue-600 text-red text-white">
-		<div class="container max-w-screen-xl mx-auto px-4 flex justify-between items-center">
+		<div class="container max-w-screen-xl text-xl mx-auto px-4 flex justify-between items-center">
 			<!-- menu -->
 			<nav class="hidden lg:flex flex-1 items-center py-1">
 				<a class="px-3 py-2 rounded-md hover:bg-blue-500" href="/"> Home </a>
@@ -89,13 +89,13 @@
 
 			</nav>
             <div>
-                    <div class="col-md-2 float-left text-white text-xl flex items-center space-x-2 ml-5"><p> Date/Time: <span id="datetime"></span></p>
+                    <div class="col-md-2 float-left text-white flex items-center space-x-2 ml-5"><p> Date/Time: <span id="datetime"></span></p>
                         <script>
                         var dt = new Date();
                         document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
                         </script>
                 </div>
-                <div class="col-md-2 float-left text-white text-xl flex items-center space-x-1 ml-2">
+                <div class="col-md-2 float-left text-white  flex items-center space-x-1 ml-2">
                     <script>
                     function showtime(){
                     var d = new Date();
